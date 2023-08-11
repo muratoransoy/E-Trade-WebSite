@@ -1,0 +1,12 @@
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\bin\Debug\net6.0\ETradeAPI.Domain.deps.json
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\bin\Debug\net6.0\ETradeAPI.Domain.dll
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\bin\Debug\net6.0\ETradeAPI.Domain.pdb
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\obj\Debug\net6.0\ETradeAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\obj\Debug\net6.0\ETradeAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\obj\Debug\net6.0\ETradeAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\obj\Debug\net6.0\ETradeAPI.Domain.AssemblyInfo.cs
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\obj\Debug\net6.0\ETradeAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\obj\Debug\net6.0\ETradeAPI.Domain.dll
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\obj\Debug\net6.0\refint\ETradeAPI.Domain.dll
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\obj\Debug\net6.0\ETradeAPI.Domain.pdb
+C:\Users\murat\Desktop\ETradeApplication\ETradeAPI\Core\ETradeAPI.Domain\obj\Debug\net6.0\ref\ETradeAPI.Domain.dll

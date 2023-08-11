@@ -1,0 +1,37 @@
+.admin-container {
+    width: 99%;
+    height: 860px;
+    margin: 10px;
+    border: 1px solid #555;
+  }
+  
+  mat-drawer {
+    background-color: #7eb5ec; /* Beyaz renk */
+    color: #000;
+    width: 250px;
+    padding: 20px;
+  }
+  
+  mat-drawer-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000;
+  }
+  
+  /* Stil için ekstra düzenlemeler yapabilirsiniz */
+  mat-drawer p {
+    margin: 10px 0;
+  }
+  
+  /* Stil için ekstra düzenlemeler yapabilirsiniz */
+  mat-drawer a {
+    color: #007bff; /* Mavi renk */
+    text-decoration: none;
+  }
+  
+  /* Stil için ekstra düzenlemeler yapabilirsiniz */
+  mat-drawer a:hover {
+    text-decoration: underline;
+  }
+  

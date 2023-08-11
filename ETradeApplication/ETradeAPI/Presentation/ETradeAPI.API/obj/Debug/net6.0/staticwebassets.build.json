@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "3LBCb4zTIzq9OFz4PHYldt7YuP69JMQIfF+aQ9x3sMs=",
+  "Source": "ETradeAPI.API",
+  "BasePath": "_content/ETradeAPI.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ETradeAPI.API\\wwwroot",
+      "Source": "ETradeAPI.API",
+      "ContentRoot": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETradeAPI.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\resource\\files\\app-image.jpg",
+      "SourceId": "ETradeAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETradeAPI.API",
+      "RelativePath": "resource/files/app-image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resource\\files\\app-image.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\resource\\files\\edit.png",
+      "SourceId": "ETradeAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETradeAPI.API",
+      "RelativePath": "resource/files/edit.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resource\\files\\edit.png"
+    },
+    {
+      "Identity": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\resource\\files\\WhatsApp Image 2023-07-20 at 14.29.58.jpeg",
+      "SourceId": "ETradeAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETradeAPI.API",
+      "RelativePath": "resource/files/WhatsApp Image 2023-07-20 at 14.29.58.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resource\\files\\WhatsApp Image 2023-07-20 at 14.29.58.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\resource\\files\\WhatsApp Image 2023-07-21 at 15.00.04.jpeg",
+      "SourceId": "ETradeAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETradeAPI.API",
+      "RelativePath": "resource/files/WhatsApp Image 2023-07-21 at 15.00.04.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resource\\files\\WhatsApp Image 2023-07-21 at 15.00.04.jpeg"
+    }
+  ]
+}
