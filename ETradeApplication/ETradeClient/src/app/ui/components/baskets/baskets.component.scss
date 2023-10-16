@@ -1,0 +1,28 @@
+/* Modal içeriğini düzenle */
+.modal-content {
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    table {
+      width: 100%;
+    }
+  
+    img.product-image {
+      width: 80px; /* Çerçeve genişliği */
+      height: 80px; /* Çerçeve yüksekliği */
+      object-fit: contain;
+      border-radius: 4px; /* Kenar yuvarlaklığı */
+    }
+  
+    th, td {
+      vertical-align: middle;
+    }
+  
+    .quantity-input {
+      width: 60px;
+    }
+  }
+  

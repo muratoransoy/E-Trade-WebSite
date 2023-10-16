@@ -29,7 +29,7 @@ export class HttpClientService {
     } else {
       url = `${this.url(requestParamater)}${id ? `/${id}` : ""}${requestParamater.queryString ? `?${requestParamater.queryString}` : ""}`;
     }
-    return this.httpClient.get<T>(url, { headers: requestParamater.headers });
+    return this.httpClient.get<T>(url, { headers: requestParamater.headers, responseType: requestParamater.responseType as 'json'});
   }
 
   post<T>(requestParamater: Partial<RequestParamaters>, body: Partial<T>): Observable<T> {
@@ -39,7 +39,7 @@ export class HttpClientService {
     } else {
       url = `${this.url(requestParamater)}${requestParamater.queryString ? `?${requestParamater.queryString}` : ""}`;
     }
-    return this.httpClient.post<T>(url, body, { headers: requestParamater.headers });
+    return this.httpClient.post<T>(url, body, { headers: requestParamater.headers, responseType: requestParamater.responseType as 'json' });
   }
 
   put<T>(requestParamater: Partial<RequestParamaters>, body: Partial<T>): Observable<T> {
@@ -49,7 +49,7 @@ export class HttpClientService {
     } else {
       url = `${this.url(requestParamater)}${requestParamater.queryString ? `?${requestParamater.queryString}` : ""}`;
     }
-    return this.httpClient.put<T>(url, body, { headers: requestParamater.headers });
+    return this.httpClient.put<T>(url, body, { headers: requestParamater.headers, responseType: requestParamater.responseType as 'json' });
   }
 
   delete<T>(requestParamater: Partial<RequestParamaters>, id: string): Observable<T> {
@@ -59,7 +59,7 @@ export class HttpClientService {
     } else {
       url = `${this.url(requestParamater)}/${id}${requestParamater.queryString ? `?${requestParamater.queryString}` : ""}`;
     }
-    return this.httpClient.delete<T>(url, { headers: requestParamater.headers });
+    return this.httpClient.delete<T>(url, { headers: requestParamater.headers, responseType: requestParamater.responseType as 'json' });
   }
 }
 
@@ -71,4 +71,6 @@ export class RequestParamaters {
   headers?: HttpHeaders;
   baseUrl?: string;
   fullEndPoint?: string;
+
+  responseType?: string = 'json';
 }

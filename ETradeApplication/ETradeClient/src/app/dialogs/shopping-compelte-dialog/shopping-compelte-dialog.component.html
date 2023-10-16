@@ -1,0 +1,72 @@
+<div mat-dialog-content class="custom-modal-body">
+  <h1 mat-dialog-title>Bilgilendirme</h1>
+  <div mat-dialog-content>
+    <p>Alışverişi tamamlamak için lütfen adres bilginizi giriniz</p>
+    <div class="row">
+      <div class="col-md-6 mb-2">
+        <mat-form-field>
+          <mat-label>Ad</mat-label>
+          <input matInput  #txtFirstName>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 mb-2">
+        <mat-form-field>
+          <mat-label>Soyad</mat-label>
+          <input matInput  #txtLastName>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 mb-2">
+        <mat-form-field>
+          <mat-label>Tel No</mat-label>
+          <input matInput type="tel"  #txtPhoneNo>
+        </mat-form-field>
+      </div>
+
+      <div class="col-md-6 mb-2">
+        <mat-form-field>
+          <mat-label>İl</mat-label>
+          <mat-select #txtCity [(ngModel)]="selectedCity" (ngModelChange)="onCityChange()">
+            <mat-option *ngFor="let city of cities" [value]="city.sehir_key">{{ city.sehir_title }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      
+      <div class="col-md-6 mb-2">
+        <mat-form-field>
+          <mat-label>İlçe</mat-label>
+          <mat-select #txtDistrict [(ngModel)]="selectedDistrict" (ngModelChange)="onDistrictChange()">
+            <mat-option *ngFor="let district of districts" [value]="district.ilce_key">{{ district.ilce_title }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      
+      
+      <div class="col-md-6 mb-2">
+        <mat-form-field>
+          <mat-label>Mahalle</mat-label>
+          <mat-select #txtNeighborhood>
+            <mat-option *ngFor="let neighborhood of neighborhoods" [value]="neighborhood.mahalle_key">{{ neighborhood.mahalle_title }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+
+      <div class="col-md-6 mb-2">
+        <mat-form-field>
+          <mat-label>Adres</mat-label>
+          <textarea matInput #txtAddress></textarea>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 mb-2">
+        <mat-form-field>
+          <mat-label>Açıklama</mat-label>
+          <textarea matInput #txtDescription></textarea>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial (click)="complete(txtFirstName, txtLastName, txtPhoneNo, txtAddress, txtDescription, txtCity, txtDistrict, txtNeighborhood )">Evet</button>
+    <button mat-button (click)="close()">İptal</button>
+  </div>
+  </div>

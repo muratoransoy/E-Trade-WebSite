@@ -1,5 +1,7 @@
 ﻿using ETradeAPI.Domain.Entities;
 using ETradeAPI.Domain.Entities.Common;
+using ETradeAPI.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ETradeAPI.Persistance.Context
 {
-    public class ETradeAPIDbContext : DbContext
+    public class ETradeAPIDbContext : IdentityDbContext<AppUser, AppRole, string>
     {
         public ETradeAPIDbContext(DbContextOptions options) : base(options)
         { }
@@ -19,6 +21,33 @@ namespace ETradeAPI.Persistance.Context
         public DbSet<Domain.Entities.File> Files { get; set; }
         public DbSet<ProductImageFile> ProductImageFiles { get; set; }
         public DbSet<InvoiceFile> InvoiceFiles { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
+        public DbSet<CompletedOrder> CompletedOrders { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<Endpoint> Endpoints { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Order>()
+                .HasKey(b => b.Id);
+
+            builder.Entity<Order>()
+                .HasIndex(o => o.OrderCode)
+                .IsUnique();
+
+            builder.Entity<Basket>()
+                .HasOne(b => b.Order)
+                .WithOne(b => b.Basket)
+                .HasForeignKey<Order>(b => b.Id);
+
+            builder.Entity<Order>()
+                .HasOne(o => o.CompletedOrder)
+                .WithOne(c => c.Order)
+                .HasForeignKey<CompletedOrder>(c => c.OrderId);
+
+            base.OnModelCreating(builder);
+        }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {

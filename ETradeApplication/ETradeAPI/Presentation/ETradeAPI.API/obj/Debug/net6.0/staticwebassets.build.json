@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3LBCb4zTIzq9OFz4PHYldt7YuP69JMQIfF+aQ9x3sMs=",
+  "Hash": "2I2rvAPF8h6J+NNiUhPeo4Xvw4Mxti7FMnLN57pInW0=",
   "Source": "ETradeAPI.API",
   "BasePath": "_content/ETradeAPI.API",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\photo-images\\default-product.png",
+      "SourceId": "ETradeAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETradeAPI.API",
+      "RelativePath": "photo-images/default-product.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\default-product.png"
+    },
+    {
+      "Identity": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\photo-images\\image.png",
+      "SourceId": "ETradeAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETradeAPI.API",
+      "RelativePath": "photo-images/image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\image.png"
+    },
     {
       "Identity": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\resource\\files\\app-image.jpg",
       "SourceId": "ETradeAPI.API",

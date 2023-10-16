@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\photo-images\\default-product.png",
+      "PackagePath": "staticwebassets\\photo-images\\default-product.png"
+    },
+    {
+      "Id": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\photo-images\\image.png",
+      "PackagePath": "staticwebassets\\photo-images\\image.png"
+    },
+    {
       "Id": "C:\\Users\\murat\\Desktop\\ETradeApplication\\ETradeAPI\\Presentation\\ETradeAPI.API\\wwwroot\\resource\\files\\WhatsApp Image 2023-07-20 at 14.29.58.jpeg",
       "PackagePath": "staticwebassets\\resource\\files\\WhatsApp Image 2023-07-20 at 14.29.58.jpeg"
     },

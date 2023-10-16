@@ -1,0 +1,16 @@
+<div style="text-align: center; padding: 0 20px;">
+  <h4>Product QRCode Reading</h4>
+
+  <mat-form-field appearance="fill" class="product-create">
+    <mat-label>Stock</mat-label>
+    <input matInput type="number" min="0" value="0" #txtStock>
+  </mat-form-field>
+
+  <div style="margin: 20px 0;">
+    <zxing-scanner (scanSuccess)="onScanSuccess($event)"></zxing-scanner>
+  </div>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close id="btnClose">Kapat</button>
+  </mat-dialog-actions>
+  
+</div>

@@ -43,10 +43,9 @@ export class DeleteDirective {
       data: DeleteState.Yes,
       afterClosed: async () => {
         this.spinner.show(SpinnerType.BallSpinFadeRotating);
-  
         const td: HTMLTableCellElement = this.element.nativeElement;
         this.httpClientService.delete({
-          controller: this.controller,
+          controller: this.controller
         }, this.id).subscribe(data => {
           $(td.parentElement).animate({
             opacity: 0,
@@ -54,23 +53,24 @@ export class DeleteDirective {
             height: "toogle"
           }, 700, () => {
             this.callback.emit();
-            this.alertifyService.message("Ürün başarıyla silinmiştir.", {
+            this.alertifyService.message(`${this.controller == 'roles' ? 'Rol' : 'Ürün'} başarıyla silinmiştir.`, {
               dismissOthers: true,
               messageType: MessageType.Success,
               positionType: PositionType.TopRight
-            });
+            })
           });
-        }, (errorResponse: HttpErrorResponse) =>{
+        }, (errorResponse: HttpErrorResponse) => {
           this.spinner.hide(SpinnerType.BallSpinFadeRotating);
-          this.alertifyService.message("Ürün silinirken beklenmedik bir hata oluştu!", {
+          this.alertifyService.message("Ürün silinirken beklenmeyen bir hatayla karşılaşılmıştır.", {
             dismissOthers: true,
             messageType: MessageType.Error,
             positionType: PositionType.TopRight
           });
         });
       }
-    }); 
+    });
   }
+  
   // openDialog(afterClosed: any): void {
   //   const dialogRef = this.dialog.open(DeleteDialogComponent, {
   //     width: '250px',

@@ -1,0 +1,23 @@
+.form-container {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    @media (max-width: 400px) {
+      max-width: 90%;
+      margin: 50px auto;
+    }
+  }
+  
+  .form-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .form-check-label {
+    font-size: 14px;
+  }

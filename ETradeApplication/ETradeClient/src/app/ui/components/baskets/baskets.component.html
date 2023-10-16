@@ -1,1 +1,70 @@
-<p>baskets works!</p>
+<!-- Modal -->
+
+<div class="modal-content">
+  <div class="modal-header">
+    <h1 class="modal-title fs-5" id="exampleModalLabel">Shopping Cart</h1>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="modal"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Product Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Settings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="{{ basketItem.basketItemId }}"
+          *ngFor="let basketItem of basketItems; let i = index"
+        >
+          <th scope="row">{{ i + 1 }}</th>
+          <td>
+            <!-- <img
+              class="product-image"
+              src="{{ basketItem.imagePath }}"
+              alt="Product Image"
+            /> -->
+             <img class="product-image" *ngIf="!basketItem.productImageFiles.length" src="../../../../assets/default-product-image.png"  alt="Product Image">
+                <img class="product-image" *ngIf="basketItem.productImageFiles.length" src="{{basketItem.imagePath}}"  alt="Product Image"> 
+          </td>
+          <td>{{ basketItem.name }}</td>
+          <td>{{ basketItem.price }}</td>
+          <td>
+            <input
+              class="quantity-input"
+              type="number"
+              [value]="basketItem.quantity"
+              data-id="{{ basketItem.basketItemId }}"
+              (change)="changeQuantity($event)"
+            />
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-light"
+              (click)="removeBasketItem(basketItem.basketItemId)"
+            >
+              <img src="../../../../assets/trash.svg" alt="Delete Icon" />
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+      Close
+    </button>
+    <button type="button" class="btn btn-primary" (click)="ShopingComplete()">Complete shopping</button>
+  </div>
+</div>

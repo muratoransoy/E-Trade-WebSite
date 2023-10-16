@@ -1,0 +1,49 @@
+<form [formGroup]="frm" (ngSubmit)="onSubmit(frm.value)" style="max-width: 400px; margin: 0 auto;">
+    <div class="mb-3">
+        <label for="nameSurname" class="form-label">Name & Surname</label>
+        <input type="text" formControlName="nameSurname" class="form-control" id="nameSurname" aria-describedby="emailHelp"
+               placeholder="Enter Name and Surname" [ngClass]="{'is-invalid': submitted && component.nameSurname.errors}">
+        <div class="form-text" *ngIf="submitted && component.nameSurname.errors?.required" style="color: red; ">
+            Please do not leave first and last name blank...</div>
+            <div class="form-text" *ngIf="submitted && (component.nameSurname.errors?.maxlength || component.nameSurname.errors?.minlength) " style="color: red; ">
+                Please write your name and surname between 3 and 50 characters... </div>
+    </div>
+    <div class="mb-3">
+        <label for="userName" class="form-label">Username</label>
+        <input type="text" formControlName="userName" class="form-control" id="Username" aria-describedby="emailHelp"
+               placeholder="Enter Username" [ngClass]="{'is-invalid': submitted && component.userName.errors}">
+        <div class="form-text" *ngIf="submitted && component.userName.errors?.required" style="color: red;"> Please do not leave username blank...</div>
+        <div class="form-text" *ngIf="submitted && (component.userName.errors?.maxlength || component.userName.errors?.minlength) " style="color: red; ">
+            Please write your name and surname between 3 and 50 characters... </div>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" formControlName="email" class="form-control" id="email" placeholder="Enter email"  [ngClass]="{'is-invalid': submitted && component.email.errors}">
+        <div class="form-text"  *ngIf="submitted && component.email.errors?.required" style="color: red;">  Please do not leave email blank...</div>
+        <div class="form-text" *ngIf="submitted && (component.email.errors?.maxlength) " style="color: red; ">
+            E-mail can be up to 250 characters </div>
+            <div class="form-text" *ngIf="submitted && (component.email.errors?.email) " style="color: red; ">
+                Please enter the e-mail in the correct format. </div>
+    </div> 
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" formControlName="password" class="form-control" id="password"
+               placeholder="Password" [ngClass]="{'is-invalid': submitted && component.password.errors}">
+               <div class="form-text" *ngIf="submitted && component.password.errors?.required" style="color: red; ">
+                Please do not leave password blank...</div>
+    </div>
+    <div class="mb-3">
+        <label for="passwordConfirm" class="form-label">Password Confirm</label>
+        <input type="password" formControlName="passwordConfirm" class="form-control" id="passwordConfirm"
+               placeholder="Password Confirm" [ngClass]="{'is-invalid': submitted && component.passwordConfirm.errors}">
+               <div class="form-text" *ngIf="submitted && frm.hasError('notSame') " style="color: red; ">
+                Please confirm the password... </div>
+                <div class="form-text" *ngIf="submitted && component.passwordConfirm.errors?.required" style="color: red; ">
+                    Please do not leave password Confirm blank...</div>
+    </div>
+    <!-- <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+    <button type="submit" class="btn btn-primary">Sign In</button>
+</form>

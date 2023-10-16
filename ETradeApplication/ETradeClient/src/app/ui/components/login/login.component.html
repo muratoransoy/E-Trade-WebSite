@@ -1,0 +1,39 @@
+<div style="max-width: 400px; margin: 0 auto">
+<!-- Kullanıcı adı veya email inputu için -->
+<div class="mb-3">
+  <label for="userName" class="form-label">Username & E-Mail</label>
+  <input
+    #txtuserNameOrEmail
+    type="text"
+    class="form-control"
+    id="userName"
+    aria-describedby="emailHelp"
+    placeholder="Enter Username or E-Mail"
+    required
+  />
+  <div class="form-text text-muted">{{ userNameOrEmailError }}</div>
+</div>
+
+<!-- Şifre inputu için -->
+<div class="mb-3">
+  <label for="password" class="form-label">Password</label>
+  <input
+    #txtpassword
+    type="password"
+    class="form-control"
+    id="password"
+    placeholder="Enter Password"
+    required
+  />
+  <div class="form-text text-muted">{{ passwordError }}</div>
+</div>
+
+<div class="mb-3" style="text-align: center; display: flex; align-items: center;">
+  <asl-google-signin-button style="margin-right: 10px;"></asl-google-signin-button>
+  <img src="../../../../assets/facebook.png" style="width: 30px; height: 30px; cursor: pointer;" (click)="facebookLogin()" />
+</div>
+
+    
+  <button type="submit" class="btn btn-primary" (click)="login( txtuserNameOrEmail.value, txtpassword.value)">Login</button>
+  <a style="margin-top: 5px; margin-left: 5px;" routerLink="/password-reset" class="btn btn-info">Forgot password?</a>
+</div>
